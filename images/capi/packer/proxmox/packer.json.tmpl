@@ -190,7 +190,7 @@
     "cores": "2",
     "crictl_url": "https://github.com/kubernetes-sigs/cri-tools/releases/download/v{{user `crictl_version`}}/crictl-v{{user `crictl_version`}}-linux-amd64.tar.gz",
     "crictl_version": null,
-    "disk_format": "qcow2",
+    "disk_format": "raw",
     "disk_size": "20G",
     "existing_ansible_ssh_args": "{{env `ANSIBLE_SSH_ARGS`}}",
     "http_directory": "./packer/proxmox/linux/{{user `distro_name`}}/http/",
@@ -228,6 +228,6 @@
     "username": "{{env `PROXMOX_USERNAME`}}",
     "vlan_tag": "{{env `PROXMOX_VLAN`}}",
     "vmid": "",
-    "scsi_controller": "virtio-scsi-pci"
+    "scsi_controller": "virtio-scsi-single"
   }
 }

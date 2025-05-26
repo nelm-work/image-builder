@@ -1,3 +1,6 @@
 .vscode/
 .idea/
 .venv/
+
+.env*
+downloaded_iso_path/
